@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- inn header er linken css, font, assets. linken til swiper css -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./assets/icon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="./assets/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Smart Inception | Hjem</title>
+  </head>
+  <body>
+    <!-- Navbar  er fra her og hamburger menu -->
+    <nav class="navbar">
+      <a href="./index.html" class="navbar__logo">
+        <img src="./assets/images/logo.svg" alt="logo" />
+      </a>
+
+      <div>
+        <div class="hamburger-icon" id="hamburger-btn">
+          <img src="./assets/hamburger-menu-icon.svg" alt="hamburger icon" />
+        </div>
+        <div class="navbar__navlink-container" id="hamburger-menu">
+          <a href="./index.html">Hjem</a>
+          <a href="./projects.html">Prosjekter</a>
+          <a href="./services.html">Tjenster</a>
+          <a href="./about-us.html">Om oss</a>
+          <a href="./contact-us.html">Kontakt</a>
+        </div>
+      </div>
+    </nav>
+    
+    <header class="header">
+      <img src="./assets/images/header-bg.svg" alt="header bg" />
+    </header>
+    <section class="about">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+      nobis reiciendis corporis, veniam consequuntur vel, numquam asperiores hic
+      minus totam soluta! Adipisci deleniti ratione possimus nemo voluptate
+      obcaecati quas amet!
+    </section>
+
+    <!-- Services section -->
+    <section class="section" id="service">
+      <h1 class="section__title">Tjenster</h1>
+      <!-- loader -->
+      <div class="loader">
+        <img src="./assets/loader.svg" class="spinner" alt="loading" />
+      </div>
+      <div class="swiper serviceSwiper">
+        <div class="swiper-wrapper" id="serviceSwiperWrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section" id="kundar">
+      <h1 class="section__title">Kunder</h1>
+      <div class="grid grid-5 kunder_container">
+        <div class="grid__item">
+          <img
+            src="./assets/images/kundar-placeholder.png"
+            alt="kundar placeholder"
+          />
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./assets/images/kundar-placeholder.png"
+            alt="kundar placeholder"
+          />
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./assets/images/kundar-placeholder.png"
+            alt="kundar placeholder"
+          />
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./assets/images/kundar-placeholder.png"
+            alt="kundar placeholder"
+          />
+        </div>
+
+        <div class="grid__item">
+          <img
+            src="./assets/images/kundar-placeholder.png"
+            alt="kundar placeholder"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h1 class="section__title">Prosjekter</h1>
+      <!-- loader -->
+      <div class="loader">
+        <img src="./assets/loader.svg" class="spinner" alt="loading" />
+      </div>
+
+      <div class="swiper prosjekterSwiper">
+        <div class="swiper-wrapper" id="projectSwiperWrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+       <!-- Footer med sosial media om info -->
+    <footer class="footer">
+      <div class="content">
+        <div class="content-left">
+          <h2>Smart Inspection As</h2>
+          <a href="./contact-us.html">Kontakt Oss</a>
+          <a href="./about-us.html">Om Oss</a>
+          <a href="./carrier.html">Karriere</a>
+        </div>
+        <div class="content-right">
+          <a href="#" class="social__link">
+            <img src="./assets/images/linkedin-logo.svg" alt="linkedin logo" />
+          </a>
+          <a href="#" class="social__link">
+            <img
+              src="./assets/images/facebook-square-logo.svg"
+              alt="facebook logo"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="copyright">&copy; 2022 Smart Inspection AS</div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
